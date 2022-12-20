@@ -1,0 +1,40 @@
+.single-pricing-box .pricing-header.bg2 {
+    background-image: url(https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg);
+}
+.ptb-100 {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+.single-pricing-box {
+    padding-bottom: 19px;
+}
+.single-pricing-box .pricing-header {
+    background-color: #002e5b;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.single-pricing-box {
+    text-align: left;
+}
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    width: 100%;
+}
+@media only screen and (max-width: 767px){
+    .page-title-area {
+        height: -14%;
+        padding-top: 214px;
+        padding-bottom: 32px;
+    }
+}

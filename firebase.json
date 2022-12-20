@@ -1,0 +1,14 @@
+{
+  "device_info": {
+    "diagnosis_id": 1,
+    "serial_number": "6546545",
+    "status": "pending"
+  },
+  "mysql": {
+    "id": ""
+  },
+  "testing": {
+    "id": "",
+    "pass": ""
+  }
+}
