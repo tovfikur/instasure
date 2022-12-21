@@ -237,6 +237,36 @@ $page_heading = 'Edit Parent Dealer';
                                 </div>
                                 <!-- /.form-group -->
 
+<!-- Need to work on here -->
+<!-- Added by Tovfikur -->
+                                <div class="form-group col-md-3">
+                                    <label for="terms_and_condition">
+                                        Show terms and condition
+                                    </label>
+                                    <select name="terms_and_condition" id="terms_and_condition" class="form-control">
+                                        <option value="1" @if ($dealerDetails->terms_and_condition == 1) selected @endif>Yes
+                                        </option>
+                                        <option value="0" @if ($dealerDetails->terms_and_condition == 0) selected @endif>No
+                                        </option>
+                                    </select>
+                                </div>
+                                <!-- /.form-group -->
+
+
+                                <div class="form-group col-md-3">
+                                    <label for="signature">
+                                        Get signature on terms and condition
+                                    </label>
+                                    <select name="signature" id="signature" class="form-control">
+                                        <option value="1" @if ($dealerDetails->signature == 1) selected @endif>Yes
+                                        </option>
+                                        <option value="0" @if ($dealerDetails->signature == 0) selected @endif>No
+                                        </option>
+                                    </select>
+                                </div>
+                                <!-- /.form-group -->
+
+
                                 <div class="form-group col-md-6">
                                     <label for="com_address">Business Address</label>
                                     <textarea name="com_address" id="com_address" class="form-control" rows="1">{!! $dealerDetails->com_address !!}</textarea>

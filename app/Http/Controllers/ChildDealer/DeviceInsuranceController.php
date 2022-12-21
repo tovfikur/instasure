@@ -445,6 +445,15 @@ class DeviceInsuranceController extends Controller
     public function policyCertificate($id)
     {
         $deviceInsurance = DeviceInsurance::find(decrypt($id));
+        
+        //try catch added by Tovfikur 21/12/22
+        try {
+            $parentDealer = Dealer::where('id', $deviceInsurance->parent_dealer_id)->first();
+            return view('backend.child_dealer.device_insurance.policy_certificate', compact('deviceInsurance', 'parentDealer'));
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+        //End Tovfikur
         return view('backend.child_dealer.device_insurance.policy_certificate', compact('deviceInsurance'));
     }
 

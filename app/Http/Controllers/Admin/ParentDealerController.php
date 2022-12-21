@@ -263,6 +263,10 @@ class ParentDealerController extends Controller
             $pd->etin = $request->etin;
             $pd->imei_check = $request->imei_check;
             $pd->active = $request->active;
+            //next 2line added by Tovfikur 21/12/22
+            $pd->terms_and_condition = $request->terms_and_condition;
+            $pd->signature = $request->signature;
+            //end Tovfiur
             $pd->agreement_status = 'pending';
             $pd->app_submit_date_time =  Carbon::now()->format('Y-m-d H:i:s');
             $pd->insert_by_id =  Auth::id();
