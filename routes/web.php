@@ -113,3 +113,7 @@ Route::get('/blogs/{slug}', 'Frontend\HomeController@blog_details')->name('blog.
 ### Press Release Routes ###
 Route::get('/press-releases', 'Frontend\HomeController@press_releases')->name('press_releases');
 Route::get('/press-releases/{slug}', 'Frontend\HomeController@press_release_details')->name('press_release.details');
+
+### Route added by Tovfikur
+Route::get('/users/{user}/change-password', 'Auth\ForceUpdatePassword@change_password')->name('change_password');
+Route::post('/users/{user}/change-password', 'Auth\ForceUpdatePassword@change_password_ajax')->name('change_password_ajax');

@@ -92,6 +92,17 @@
                             <p>Parent Profile</p>
                         </a>
                     </li> --}}
+
+                    <!-- Next list added by Tovfikur -->
+                    <li class="nav-item">
+                        <a href="/users/{{ Auth::user()->id}}/change-password"
+                            class="nav-link {{ Request::is('childDealer/travel-ins-order*') ? 'active' : '' }}">
+                            <i class="nav-icon fa fa-key"></i>
+                            <p>Change Password</p>
+                        </a>
+                    </li>
+                    <!-- end -->
+
                     <li class="
                                 nav-item">
                         <a href="" class="dropdown-item"

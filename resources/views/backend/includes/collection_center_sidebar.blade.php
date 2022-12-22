@@ -50,6 +50,18 @@
                         </a>
                     </li>
                     <!-- /.nav-item -->
+
+                    <!-- Next list added by Tovfikur -->
+
+                    <li class="nav-item">
+                        <a href="/users/{{ Auth::user()->id}}/change-password"
+                            class="nav-link {{ Request::is('childDealer/travel-ins-order*') ? 'active' : '' }}">
+                            <i class="nav-icon fa fa-key"></i>
+                            <p>Change Password</p>
+                        </a>
+                    </li>
+                    <!-- end -->
+
                     <li class="nav-item">
                         <a href="" class="dropdown-item" onclick="event.preventDefault();
                         document.getElementById('sidebar-logout-form').submit();">
